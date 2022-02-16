@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign Up</title>
+</head>
+<style>
+input[type=text]{
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  color: black;
+  align-items: center;
+  text-align: left;
+}
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+  color: black;
+}
+button {
+  background-color: #A57A5A;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.container{
+	  padding: 16px;
+	  text-align: center;
+	}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+	}
+</style>
+
+<body>
+<h1 class="text"style="text-align: center; font-size: 50px;">Create Record</h1>
+<p class="text"style="text-align: center; font-size: 25px;">Fill up the form below</p>
+<hr>
+<div class="container">
+    <label for="name"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="name" required>
+
+    <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="address" required>
+
+    <label for="contact"><b>Contact Number</b></label>
+    <input type="text" placeholder="Repeat Contact Number" name="contact" required>
+
+    <label for="temp"><b>Temperature</b></label>
+    <input type="text" placeholder="Enter Temperature" name="temp" required>
+</div>
+    <div class="clearfix">
+      <a href=""><button type="button" class="cancel">Cancel</button>
+      <a href=""><button type="submit" class="create">Create</button>
+    </div>
+</body>

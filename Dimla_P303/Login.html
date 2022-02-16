@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login</title>
+</head>
+<style>
+input[type=text], input[type=password]{
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  color: black;
+  align-items: center;
+  text-align: left;
+}
+input[type=text], input[type=password]:focus{
+  background-color: #ddd;
+  outline: none;
+  color: black;
+}
+button {
+  background-color: #A57A5A;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.container{
+	  padding: 16px;
+	  text-align: center;
+	}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+	}
+</style>
+<body>
+	<h1 class="text"style="text-align: center; font-size: 50px;">Login</h1>
+	<p class="text"style="text-align: center; font-size: 25px;">Enter Account Details</p>
+	<hr>
+<div class="container">
+    <label for="Uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="Uname" required>
+
+    <label for="address"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="address" required>
+</div>
+<div class="clearfix">
+      <a href=""><button type="submit" class="Login">Login</button>
+      <a href=""><button type="button" class="cancel">Cancel</button>
+</div>
+</body>
